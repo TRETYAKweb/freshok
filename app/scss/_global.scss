@@ -1,0 +1,13 @@
+body {
+  @extend %lato-600;
+  color: $title;
+  font-size: $font-size;
+  line-height: $line-height;
+  background-color: $white;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

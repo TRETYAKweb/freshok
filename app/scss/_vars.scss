@@ -1,0 +1,62 @@
+// Базовые цвета
+
+$dark-900:                    #010009;
+$dark-800:                    #31352b;
+$dark-500:                    #505050;
+$silver-600:                  #c1c1c1;
+$silver-600:                  #f6f6f6;
+$white:                       #ffffff;
+
+$border-color:                #cfcfcf;
+$bg-color:                    #f5f5f5;
+
+$main-color:                  #63a60f;
+$green-200:                   #e0edcf;
+$green-100:                   #eff6e7;;
+$accent:                      #cf3e3b;
+$orange-900:                  #ff7a00;
+$yellow-900:                  #ffb800;
+$default:                     #505050;
+$title:                       #121212;
+
+// Типографика
+
+%lato-300 {
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 300;
+}
+
+%lato-400 {
+  font-family: 'Lato-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%lato-600 {
+  font-family: 'Lato-Semibold', sans-serif;
+  font-weight: 600;
+}
+
+%lato-700 {
+  font-family: 'Lato-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%signika-600 {
+  font-family: 'Signika-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%signika-700 {
+  font-family: 'Signika-Bold', sans-serif;
+  font-weight: 700;
+}
+
+$font-size:                   14px;
+$line-height:                 1.4;
+
+$font-size-h1:                60px;
+$font-size-h2:                32px;
+$font-size-h3:                24px;
+$font-size-h4:                18px;
+$font-size-h5:                16px;
+$font-size-h6:                14px;
