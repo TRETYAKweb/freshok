@@ -17,10 +17,23 @@ body {
   flex-grow: 1;
 }
 
+section {
+  padding: 72px 0;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  @extend %lato-600;
+  text-transform: uppercase;
+  font-size: $font-size-h2;
+  letter-spacing: 0.03em;
+  color: $title;
+  margin-bottom: 30px;
 }
 
 .button {
