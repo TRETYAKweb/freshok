@@ -406,13 +406,13 @@
     background-position: center center;
     background-size: cover;
     &--fresh {
-    background-image: url("../images/slider/fresh.jpg");
+      background-image: url("../images/slider/fresh.jpg");
     }
     &--tomato {
-    background-image: url("../images/slider/tomato.jpg");
+      background-image: url("../images/slider/tomato.jpg");
     }
     &--greens {
-    background-image: url("../images/slider/greens.jpg");
+      background-image: url("../images/slider/greens.jpg");
     }
   }
   &__text {
@@ -443,10 +443,23 @@
   padding: 14px 20px;
   border: none;
   border-radius: 6px;
-  background-color:rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  &:hover {
+    background-color: $green-200;
+  }
+  &:active {
+    background-color: $green-200;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:focus {
+    background-color: $green-200;
+    box-shadow: 0px 0px 0px 4px #e0edcf;
+  }
 }
 
 .slick-prev {
