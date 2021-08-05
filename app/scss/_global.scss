@@ -59,4 +59,22 @@ section {
     background-color: $down-btn;
     box-shadow: 0px 0px 0px 4px #E0EDCF;
   }
+  &--border {
+    background-color: $white;
+    border: 1px solid $down-btn;
+    color: $down-btn;
+  }
+  &--border:hover {
+    background-color: $green-100;
+  }
+  &--border:active {
+    background-color: $white;
+    color: rgba(99, 166, 14, 0.5);
+    box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+  }
+  &--border:focus {
+    background-color: $white;
+    color: rgba(99, 166, 14, 0.5);
+    box-shadow: 0px 0px 0px 4px rgba(99, 166, 14, 0.5);
+  }
 }
