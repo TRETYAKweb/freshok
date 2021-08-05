@@ -1,5 +1,5 @@
 html,
-body{
+body {
   height: 100%;
 }
 
@@ -21,4 +21,29 @@ body {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.button {
+  @extend %lato-400;
+  padding: 12px 24px;
+  color: $white;
+  background-color: $main-color;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: $hover-btn;
+  }
+  &:active {
+    background-color: $down-btn;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &:focus {
+    background-color: $down-btn;
+    box-shadow: 0px 0px 0px 4px #E0EDCF;
+  }
 }
