@@ -57,7 +57,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   &__bottom {
@@ -539,13 +539,16 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  &-item {
+    cursor: pointer;
+  }
   &-item:not(:last-child) {
     margin-right: 25px;
   }
   &-item:hover {
     border-bottom: 3px solid $green-200;
   }
-  &-item--active {
+  &-item:active {
     border-bottom: 3px solid $green-200;
   }
 }

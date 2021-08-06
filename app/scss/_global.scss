@@ -63,6 +63,7 @@ section {
     background-color: $white;
     border: 1px solid $down-btn;
     color: $down-btn;
+    cursor: pointer;
   }
   &--border:hover {
     background-color: $green-100;
