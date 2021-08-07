@@ -26,39 +26,45 @@ $down-btn:                    #63A60E;
 // Типографика
 
 %lato-300 {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
 %lato-400 {
-  font-family: 'Lato-Regular', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
 %lato-600 {
-  font-family: 'Lato-Semibold', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
 }
 
 %lato-700 {
-  font-family: 'Lato-Bold', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 
 %signika-600 {
-  font-family: 'Signika-SemiBold', sans-serif;
+  font-family: 'Signika', sans-serif;
   font-weight: 600;
 }
 
 %signika-700 {
-  font-family: 'Signika-Bold', sans-serif;
+  font-family: 'Signika', sans-serif;
   font-weight: 700;
 }
 
 $font-size:                   14px;
 $line-height:                 1.4;
 
-$font-size-h1:                60px;
+$font-size-h2:                58px;
+$font-size-h3:                32px;
+$font-size-h4:                24px;
+$font-size-h5:                18px;
+$font-size-h6:                16px;
+
+$font-size-h1:                58px;
 $font-size-h2:                32px;
 $font-size-h3:                24px;
 $font-size-h4:                18px;

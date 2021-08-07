@@ -1,0 +1,223 @@
+.header {
+  &__bg {
+    background-color: $dark-800;
+  }
+
+  &__bg--green {
+    background-color: $main-color;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+  padding: 14px 0;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+  &__item--delivery {
+    padding-left: 44px;
+    position: relative;
+    margin-right: 48px;
+    & svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__item--phone {
+    padding-left: 34px;
+    position: relative;
+    & svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.logo {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+  &:focus {
+    outline-color: $white;
+  }
+}
+
+.catalog {
+  padding: 15.5px 18px;
+  background-color: $white;
+  color: $main-color;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: $green-200;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+  }
+
+  & span {
+    position: relative;
+    padding: 0 21px 0 43px;
+  }
+  &__nav-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.search-form {
+  max-width: 577px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &__form {
+    font-weight: 400;
+    width: 100%;
+    padding: 15.5px 13px 15.5px 50px;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 6px 0px 0px 6px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    &::placeholder {
+      color: $dark-800;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    background-image: url("../images/icons/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  &__btn {
+    padding: 15px 52px;
+    color: $white;
+    background-color: $dark-800;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(49, 53, 43, 0.85);
+    }
+    &:active {
+      background-color: $dark-800;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    // У меня почему-то при клеке врубается box-shadow
+    &:focus {
+      background-color: $dark-800;
+      box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+      outline: none;
+    }
+  }
+}
+
+.user-nav {
+  max-width: 153px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 33px;
+
+  &__item {
+    padding: 9px 12px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      background-color: $white;
+      border-radius: 3px;
+    }
+    &:hover::before {
+      opacity: 0.1;
+    }
+    &:active::before {
+      opacity: 0.3;
+    }
+    &:focus {
+      outline-color: $white;
+    }
+    & span {
+      position: absolute;
+      top: 4px;
+      left: 6px;
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      color: $accent;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $white;
+    }
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 9px;
+  }
+}

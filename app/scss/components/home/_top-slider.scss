@@ -1,0 +1,73 @@
+.top-slider {
+  padding: 0;
+  &__item {
+    padding: 160px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &--fresh {
+      background-image: url("../images/slider/fresh.jpg");
+    }
+    &--tomato {
+      background-image: url("../images/slider/tomato.jpg");
+    }
+    &--greens {
+      background-image: url("../images/slider/greens.jpg");
+    }
+  }
+  &__text {
+    max-width: 757px;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: "Signika", sans-serif;
+    font-weight: 700;
+    font-size: $font-size-h1;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    & span {
+      color: $accent;
+    }
+  }
+  &__desc {
+    font-weight: 400;
+    color: $dark-500;
+  }
+}
+
+.slick {
+  &-btn {
+    position: absolute;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    transition: 0.3s ease-in-out;
+    outline: none;
+    &:hover {
+      background-color: $green-200;
+    }
+    &:active {
+      background-color: $green-200;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:focus {
+      background-color: $green-200;
+      box-shadow: 0px 0px 0px 4px #e0edcf;
+    }
+  }
+
+  &-prev {
+    left: 60px;
+  }
+  &-next {
+    right: 60px;
+  }
+}
