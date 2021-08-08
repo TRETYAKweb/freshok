@@ -4,11 +4,10 @@
   }
 
   &__content {
-    display: flex;
-    flex-wrap: wrap;
-    column-count: 4;
-    column-gap: 30px;
-    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-gap: 30px;
+    margin-bottom: 48px;
   }
   &__wrap {
     text-align: center;
@@ -24,6 +23,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  outline: transparent;
   &__item {
     cursor: pointer;
   }
@@ -49,7 +49,6 @@
   width: 100%;
   position: relative;
   transition: border 0.3s ease-in-out;
-  margin-bottom: 30px;
   &__image {
     margin-bottom: 17px;
   }
@@ -58,6 +57,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  &__favorite {
+    outline-color: $main-color;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 17px;
+    right: 12px;
+    cursor: pointer;
+    & svg {
+      fill: $silver-600;
+      transition: fill 0.3s ease-in-out;
+    }
+    & svg:hover {
+      fill: $yellow-900;
+    }
+  }
+  &__link {
+    outline-color: $main-color;
   }
   &__title {
     font-weight: 700;
@@ -70,6 +89,7 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    outline-color: $main-color;
   }
   &__title:hover {
     text-decoration-line: underline;
@@ -78,6 +98,57 @@
 
   &:hover {
     border: 1px solid $down-btn;
+  }
+
+  &__price {
+    &--new {
+      color: red;
+      display: block;
+      font-weight: 400;
+      color: $default;
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+    &--old {
+      color: $silver-600;
+      margin-bottom: 3px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $silver-600;
+        top: 50%;
+        left: -3px;
+        transform: rotate(-6deg);
+      }
+    }
+  }
+
+  &__basket {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    border: none;
+    background-color: $main-color;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    outline: transparent;
+    & svg {
+      fill: $white;
+    }
+    &:hover {
+      background-color: $hover-btn;
+    }
+    &:focus {
+      background-color: $down-btn;
+      box-shadow: 0px 0px 0px 4px $green-200;
+    }
+    
   }
 }
 
@@ -105,74 +176,5 @@
     background-color: $orange-900;
     top: 12px;
     left: 12px;
-  }
-}
-
-.button-favorite {
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  top: 17px;
-  right: 12px;
-  cursor: pointer;
-  & svg {
-    fill: $silver-600;
-    transition: fill 0.3s ease-in-out;
-  }
-  & svg:hover {
-    fill: $yellow-900;
-  }
-}
-
-.button-basket {
-  text-align: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 3px;
-  border: none;
-  background-color: $main-color;
-  padding: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  & svg {
-    fill: $white;
-  }
-  &:hover {
-    background-color: $hover-btn;
-  }
-  &:active {
-    background-color: $down-btn;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    fill: rgba(255, 255, 255, 0.5);
-  }
-  &:focus {
-    background-color: $down-btn;
-    box-shadow: 0px 0px 0px 4px $green-200;
-  }
-}
-
-.price {
-  &__new {
-    display: block;
-    font-weight: 400;
-    color: $default;
-    line-height: 1;
-    letter-spacing: 0.03em;
-  }
-  &__new--old {
-    color: $silver-600;
-    margin-bottom: 3px;
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: $silver-600;
-      top: 50%;
-      left: -3px;
-      transform: rotate(-6deg);
-    }
   }
 }

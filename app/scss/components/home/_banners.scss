@@ -1,0 +1,56 @@
+.banners {
+  margin-bottom: 72px;
+  &__inner {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 630px 300px 300px;
+    grid-gap: 30px;
+  }
+  &__item {
+    padding: 76px 0 76px 32px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: $white;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    background-position: right center;
+
+    &--veg,
+    &--bread {
+      color: $default;
+      text-shadow: none;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+  }
+  &__title {
+    font-family: "Signika", sans-serif;
+    max-width: 391px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    &--width {
+      max-width: 185px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $white;
+    outline-color: $dark-900;
+    &--dark {
+      border-color: $default;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -48,15 +48,10 @@ section {
   font-size: 18px;
   line-height: 130%;
   letter-spacing: 0.03em;
-  outline: none;
+  outline: transparent;
   transition: background-color 0.3s ease-in-out;
   &:hover {
     background-color: $hover-btn;
-  }
-  &:active {
-    background-color: $down-btn;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: rgba(255, 255, 255, 0.5);
   }
   &:focus {
     background-color: $down-btn;
@@ -70,11 +65,6 @@ section {
   }
   &--border:hover {
     background-color: $green-100;
-  }
-  &--border:active {
-    background-color: $white;
-    color: rgba(99, 166, 14, 0.5);
-    box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
   }
   &--border:focus {
     background-color: $white;
