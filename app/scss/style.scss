@@ -10,22 +10,10 @@
 @import "components/home/products";
 @import "components/home/banners";
 @import "components/home/stock";
+@import "components/home/brands";
+@import "components/home/news";
 @import "components/footer";
 
-.brands {
-  padding: 72px 0;
-  &__item {
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
 
-.slick-track {
-  display: flex;
-  align-items: center;
-}
 
 @import "media";

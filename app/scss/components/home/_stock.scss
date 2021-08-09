@@ -22,7 +22,11 @@
   padding: 12px;
   display: flex;
   align-items: center;
+  transition: border-color .3s ease-in-out;
 
+  &__link {
+    outline-color: $main-color;
+  }
   &__image {
     margin-right: 12px;
   }
@@ -46,6 +50,11 @@
     transition: all 0.3s ease-in-out;
     outline-color: $main-color;
     margin-bottom: 6px;
+    transition: color .3s ease-in-out;
+    &:hover {
+      color: $main-color;
+      text-decoration-line: underline;
+    }
   }
 
   &__availability {
@@ -58,7 +67,7 @@
     &--red {
       color: $accent;
     }
-    &--grey {
+    &--gray {
       color: $silver-600;
     }
   }
@@ -110,4 +119,9 @@
       background-repeat: no-repeat;
     }
   }
+
+  &:hover {
+    border-color:$down-btn;
+  }
+
 }
