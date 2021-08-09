@@ -29,16 +29,17 @@ section {
 }
 
 .title {
+  color: red;
+  font-size: $font-size-h3;
   font-family: "Signika", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: $font-size-h3;
   letter-spacing: 0.03em;
   color: $title;
   margin-bottom: 30px;
 }
 
-.button {
+.clicker {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   padding: 12px 24px;
@@ -48,6 +49,7 @@ section {
   font-size: 18px;
   line-height: 130%;
   letter-spacing: 0.03em;
+  border: none;
   outline: transparent;
   transition: background-color 0.3s ease-in-out;
   &:hover {
